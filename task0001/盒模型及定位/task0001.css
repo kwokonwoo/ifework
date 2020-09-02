@@ -1,0 +1,238 @@
+/* 方法一 */
+#box1 {
+    background: red;
+    width: 960px;
+    margin: auto;
+}
+
+/* 方法二：先将centerbox左边缘右移到浏览器中心，然后左移自己的一半。*/
+.centerbox {
+    width: 960px;
+    position: relative;
+    left: 50%;
+}
+#box2 {
+    background: red;
+    position: relative;
+    left: -50%
+} 
+
+/* 方法三： */
+#box3 {
+    width: 960px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+}
+
+/* 绘制圆角矩形 */
+.rect {
+    margin: 30px auto;
+    width: 50%;
+    /* border: 0.5px solid red; */
+}
+.line {
+    height: 1px; /*这里给了每个框内容行高1px,注意到l4自定义了行高2px*/
+}
+.TwoLine {
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    /* border: 0.1px solid blue; */
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.l1_top {
+    margin: 0 5px;
+    /* border: 0.1px solid black; */
+    border-bottom: 1px solid black;
+}
+.l1_bottom {
+    margin: 0 5px;
+    /* border: 1px solid pink; */
+    border-top: 1px solid black;
+}
+.l2 {
+    margin: 0px 3px;
+    /* border: 1px dotted purple; */
+    border-left: 2px solid black; /*这里边框宽度决定了左上角横着的长方形的长 */
+    border-right: 2px solid black;
+}
+.l3 {
+    margin: 0px 2px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.l4 {
+    margin: 0px 1px;
+    height: 2px; /*这里的高度与l2border-left的宽度正好形成了对称*/
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/* 两列布局 */
+#DIV-A {
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+#DIV-B {
+    background-color: blue;
+    height: 80px;
+    margin-left: 80px;
+}
+#DIV-C {
+    background-color: yellow;
+    height: 80px;
+}
+
+.method2 {
+    font-size: 0px;
+    border: 4px solid pink;
+}
+#div-a {
+    display: inline-block;
+    background: red;
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+}
+#div-b {
+    display: inline-block;
+    background: blue;
+    width: 100%;
+    height: 80px;
+    margin-right: -85px; /*这里margin大于等于-84px会被挤到第二行，为什么呢？*/
+    font-size: 16px;
+    border: 1px solid black;
+}
+#div-c {
+    background: yellow;
+    height: 80px;
+    font-size: 16px;
+}
+
+#div-1 {
+    background: red;
+    height: 60px;
+    width: 100px;
+    position: absolute;
+}
+#div-2 {
+    background: blue;
+    height: 60px;
+    margin-left: 100px;
+}
+#div-3 {
+    background: yellow;
+    height: 60px;
+    font-size: 16px;
+}
+
+.threeB1 {
+    float: left;
+    width: 100%;
+    height: 100px;
+    background: rgb(0,255,0);
+    border: 3px solid orange;
+}
+.wrap {
+    margin-left: 100px;
+    margin-right: 200px;
+    border: 1px solid black;
+}
+.threeA1 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: rgb(255,0,0);
+    margin-left: -100%;
+    border: 1px solid black;
+}
+.threeC1 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    background: rgb(0,0,255);
+    margin-left: -200px;
+}
+
+.ThreeColumn2 {
+    padding-left: 100px;
+    padding-right: 200px;
+    border: 3px solid black;
+}
+.threeB2 {
+    float: left;
+    width: 100%;
+    height: 100px;
+    background: rgb(0,255,0);
+}
+.threeA2 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: rgb(255,0,0);
+    margin-left: -100%;
+    position: relative;
+    left: -100px;
+}
+.threeC2 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    background: rgb(0,0,255);
+    margin-left: -200px;
+    position: relative;
+    right: -200px;
+}
+
+.Container {
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid black;
+    padding: 0 200px 0 100px;
+}
+.middle {
+    float: left;
+    width: 100%;
+    height: 100px;
+    background: blue;
+    /* border: 3px solid yellow; */
+}
+.left {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-left: -100%;
+    position: relative;
+    left: -100px;
+}
+.right {
+    float: left;
+    width: 200px;
+    height: 100px;
+    background: green;
+    margin-left: -200px;
+    position: relative;
+    right:-200px; 
+}
+
+.redbox{
+    background: red;
+    width: 100%;
+    overflow: hidden;
+}
+.bluebox {
+    float: left;
+    background: blue;
+    height: 50px;
+    width: 150px;
+    margin: 20px;
+}
+.clear {
+    clear: both;
+}

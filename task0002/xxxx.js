@@ -22,3 +22,6 @@ function initEvent() {
 } //addEventListener()接受3个参数：要处理的事件名、作为事件处理程序的函数和一个布尔值。
 
 initEvent();
+
+var originalTitle = document.title;
+document.title = "New pageeeeeeee title";

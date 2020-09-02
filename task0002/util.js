@@ -141,3 +141,11 @@
 //     var pattern = /^(\+\d{1,4})?\d{7,11}$/;
 //     return pattern.test(phone);
 // }
+
+// 为element增加一个样式名为newClassName的新样式
+// function addClass(element, newClassName) {
+//     var oldClassName = element.className;
+//     element.className = oldClassName === "" ? newClassName : oldClassName + " " + newClassName;
+// }
+
+// 移除element中的样式oldClassName
